@@ -1,6 +1,5 @@
 import { Container, Box, Typography } from '@material-ui/core'
-
-import Link from '@components/Link/Link'
+import { Link } from '@components/Link'
 
 export default function Home() {
   return (

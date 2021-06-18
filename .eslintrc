@@ -2,7 +2,7 @@
   "extends": ["next", "next/core-web-vitals", "prettier"],
   "plugins": ["prettier"],
   "rules": {
-    "prettier/prettier": ["error", { "arrowParens": "off" }],
+    "prettier/prettier": ["error"],
     "import/order": [
       "error",
       {

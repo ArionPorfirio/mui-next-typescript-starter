@@ -19,6 +19,7 @@ export const NextLinkComposed = forwardRef<
   const {
     to,
     linkAs,
+    // eslint-disable-next-line no-unused-vars
     href,
     replace,
     scroll,
@@ -55,7 +56,7 @@ export type LinkProps = {
 
 // A styled version of the Next.js Link component:
 // https://nextjs.org/docs/#with-link
-const Link = forwardRef<HTMLAnchorElement, LinkProps>(function Link(
+export const Link = forwardRef<HTMLAnchorElement, LinkProps>(function Link(
   props,
   ref,
 ) {
@@ -65,6 +66,7 @@ const Link = forwardRef<HTMLAnchorElement, LinkProps>(function Link(
     className: classNameProps,
     href,
     noLinkStyle,
+    // eslint-disable-next-line no-unused-vars
     role, // Link don't have roles.
     ...other
   } = props
@@ -123,5 +125,3 @@ const Link = forwardRef<HTMLAnchorElement, LinkProps>(function Link(
     />
   )
 })
-
-export default Link
